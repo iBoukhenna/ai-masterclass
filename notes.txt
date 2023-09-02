@@ -1,0 +1,49 @@
+Artificial Intelligence
+is branch of computer science that is concerned with building smart & intelligent machines
+Machine Learning is a subset of AI
+is a technique to implement AI that can learn from the data by themselves without being explicitly programmed
+Deep Learning is a subset of ML
+is a subfield of ML that uses a special type of algorithms called as Artifical Neural Networks to learn from the data
+
+
+Supervised Learning is a type of ML
+in Supervised Learning, the ML algorithem learns from Labelled Data
+    we give the algorithm some picture of appels and label it as appel and some picture of mango and label it as mango the algorithem tries to find the patterns between these images when we make a picture of unanimous image the algo try to give with the patterns the name
+Unsupervised Learning is a type of ML
+in Unsupervised Learning, the ML algorithem learns from Unlabelled Data
+    we give the algorithem some picture the algorithem find the pattern and it tries to group these picture and when we give a new image the algo class this new picture in a group
+Reinforcement Learning is a type of ML
+is an area of machine learning concerned with how intelligent agents take actions in an envirenment to maximize its rewards (Environment, Agent, Action, Reward)
+
+Classification is a type of Supervised Learning
+is about predicting a class or discrete values, male/female, appel/mango, true/false ...
+Regression is a type of Supervised Learning
+is about predicting a quantity or continuous values, age, salary, price ...
+
+Decision Tree Classification is a type of Classification
+Random Forest Classification is a type of Classification
+K-nearest Neighbor is a type of Classification
+
+Logistic Regression is type of Regression
+Polynomial Regression is type of Regression
+Support Vector Machines is type of Regression
+
+Clustering is a type of Unsupervised Learning
+is an unsupervised task which involves grouping the similar data points
+Association is a type of Unsupervised Learning
+is an unsupervised task that used to find important relationship between data points
+    customer1 bay milk, bread, jus, customer2 bay mlik, bread, soda, customer3 bay milk, ? => bread 
+
+K-Means Clustering
+Hierarchical Clustering
+Pricipal Component Analysis (PCA)
+Apriori
+Eclat
+
+
+ML
+Input -> Features extraction by humain -> classification -> Output
+
+DL
+Input -> Features extraction automatically -> classification -> Output
+

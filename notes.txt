@@ -47,3 +47,60 @@ Input -> Features extraction by humain -> classification -> Output
 DL
 Input -> Features extraction automatically -> classification -> Output
 
+Where to collect the Data? 
+    Kaggle
+    UCI Machine Learning Repository
+    Google Dataset Search
+
+ML Project Work Flow
+   Data
+-> Data pre processing (eg. handle missing values)
+-> Data Analysis (eg. find which columns feature is important for the prediction)
+-> Train Test Split (Split data into training data and testing data)
+-> Machine Learning Model (feed the training data to ML model to find pattern)
+-> Evaluation (Evaluate the model using the test data)
+
+Handling Missing Values : replace by mean (average), median (central), mode (more repeated) 
+
+Data Standardization : make all the data to a common format and common range
+
+Label Encoding : converting the labels into numeric form
+
+Train Test Split : splitting the data into training data and test data
+
+Handle Imbalanced Data : building a dataset containing similar distribution of different
+
+Feature Extraction : the mapping from textual data to real valued vwctor is called feature extraction
+    1. Bag Of Words (BOW) : list of unique words in the text corpus
+    2. Term Frequency-Inverse Document Frequency (TF-IDF) : To count the number of times each word appears in a document
+        Term Frequency (TF) : Number of times term t appears in a document / Number of terms in the document
+        Inverse Docuement Frequency (IDF) : log(N/n), where, N is the number of documents and n is the number of documents a term t has appeared in
+        The IDF value of a rare word is high whereas the IDF of a frequent word is low
+            TF-IDF value of term = TF * IDF
+
+Stemming  : is the process of reducing a word to its keyword (Root word)
+
+Mathematics for Machine Learning
+    5.1 Linear Algebra
+    5.2 Statistics
+    5.3 Probability
+    5.4 calculs
+
+5.1 Linear Algebra
+    Vectors
+        Speed = 50 km/hr (Scalar Quantity)
+        Velocity = 50 km/hr North (Vector Quantity)
+
+        Vector have : Vector : (2, 2) or 2i + 2j
+            1. Magnitude = sqr(exp(x1, 2),exp(x2, 2)) = sqr(exp(2,2) + exp(2,2)) = sqr(4+4) = sqr(8)
+            2. Direction = tan (a) = 2/2 = 1 (a = $%)
+        
+        Vector Addition = (2,3) + (3,-2) = (5,1)
+        Vector Subtraction = (2,3) + (3,-2) = (-1,5)
+        Multiplying a Vector by Scalar = (2,3) * 2 = (4,6)
+        Multiplying a Vector by Scalar = (2,3) * -0.5 = (-1,-1.5)
+        Angle between 2 Vectors :
+            Inference : 
+                If the angle between 2 vectors is small then the 2 vectors are similar
+                If the angle between 2 vectors is large then the 2 vectors are very different
+                

@@ -1,3 +1,4 @@
+1.1 AI vs Machine Learning vs Deep Learning | AI vs ML vs DL | Machine Learning Training with Python
 Artificial Intelligence
 is branch of computer science that is concerned with building smart & intelligent machines
 Machine Learning is a subset of AI
@@ -5,7 +6,7 @@ is a technique to implement AI that can learn from the data by themselves withou
 Deep Learning is a subset of ML
 is a subfield of ML that uses a special type of algorithms called as Artifical Neural Networks to learn from the data
 
-
+1.2. Supervised vs Unsupervised vs Reinforcement Learning | Types of Machine Learning
 Supervised Learning is a type of ML
 in Supervised Learning, the ML algorithem learns from Labelled Data
     we give the algorithm some picture of appels and label it as appel and some picture of mango and label it as mango the algorithem tries to find the patterns between these images when we make a picture of unanimous image the algo try to give with the patterns the name
@@ -15,6 +16,7 @@ in Unsupervised Learning, the ML algorithem learns from Unlabelled Data
 Reinforcement Learning is a type of ML
 is an area of machine learning concerned with how intelligent agents take actions in an envirenment to maximize its rewards (Environment, Agent, Action, Reward)
 
+1.3. Supervised Learning | Types of Supervised Learning | Machine Learning Tutorial
 Classification is a type of Supervised Learning
 is about predicting a class or discrete values, male/female, appel/mango, true/false ...
 Regression is a type of Supervised Learning
@@ -28,6 +30,7 @@ Logistic Regression is type of Regression
 Polynomial Regression is type of Regression
 Support Vector Machines is type of Regression
 
+1.4. Unsupervised Learning | Clustering and Association Algorithms in Machine Learning
 Clustering is a type of Unsupervised Learning
 is an unsupervised task which involves grouping the similar data points
 Association is a type of Unsupervised Learning
@@ -41,12 +44,14 @@ Apriori
 Eclat
 
 
+1.5. What is Deep Learning | Deep Learning Tutorial | Deep Learning Simplified
 ML
 Input -> Features extraction by humain -> classification -> Output
 
 DL
 Input -> Features extraction automatically -> classification -> Output
 
+2.
 Where to collect the Data? 
     Kaggle
     UCI Machine Learning Repository
@@ -80,17 +85,18 @@ Feature Extraction : the mapping from textual data to real valued vwctor is call
 
 Stemming  : is the process of reducing a word to its keyword (Root word)
 
-Mathematics for Machine Learning
+5.0 Mathematics for Machine Learning
     5.1 Linear Algebra
     5.2 Statistics
     5.3 Probability
     5.4 calculs
 
-5.1 Linear Algebra
-    Vectors
+5.1.1 Linear Algebra Vectors
         Speed = 50 km/hr (Scalar Quantity)
         Velocity = 50 km/hr North (Vector Quantity)
 
+5.1.2 Vector Operation Part 1
+5.1.3 Vector Operation In Python Part 1
         Vector have : Vector : (2, 2) or 2i + 2j
             1. Magnitude = sqr(exp(x1, 2),exp(x2, 2)) = sqr(exp(2,2) + exp(2,2)) = sqr(4+4) = sqr(8)
             2. Direction = tan (a) = 2/2 = 1 (a = $%)
@@ -99,8 +105,240 @@ Mathematics for Machine Learning
         Vector Subtraction = (2,3) + (3,-2) = (-1,5)
         Multiplying a Vector by Scalar = (2,3) * 2 = (4,6)
         Multiplying a Vector by Scalar = (2,3) * -0.5 = (-1,-1.5)
+5.1.4 Vector Operation Part 1
+5.1.5 Vector Operation In Python Part 1
         Angle between 2 Vectors :
             Inference : 
                 If the angle between 2 vectors is small then the 2 vectors are similar
                 If the angle between 2 vectors is large then the 2 vectors are very different
-                
+        Dot Product of 2 Vectors = (2,3) . (4,4) = (2 * 4) + (3 * 4) = 20
+        Cross Product of 2 Vectors = (2,3) * (4,4) = ([2, 3 , 0] ,[4, 4, 0]) = 
+                                = i(3*0 - 4*0) - j(2*0 - 4*0) + k (2*4 - 3*4)
+                                = i(0-0) - j(0-0) - k(8-12) = {0,0,-4}
+        Projection of Vector = proj(v,a) = a.v/exp(||v||,2) * v
+5.1.6 Matrix
+5.1.7 Matrix In Python
+        Null Matrix or Zero Matrix (all values are zero)
+        Identity Matrix (all of diagonal values are one and all the remaining values are zero)
+        Transpose of a matrix is formed by turning all the rows of a given matrix into columns and vice-versa
+5.1.8 Matrix Operation
+5.1.9 Matrix Operation In Python
+        Matrix Addition
+        Two matrices can be added only if they have the same shape, 
+        that is both the matrix should have the same number of rows and columns
+        [[2,3],[10,5]] + [[10,5],[20,4]] = [[12,8],[30,9]]
+        Martix Subtraction
+        Two matrices can be subtracted only if they have the same shape, 
+        that is both the matrix should have the same number of rows and columns
+        [[2,3],[10,5]] - [[10,5],[20,4]] = [[-8,-2],[-10,1]]
+        Multiplying a Martix by Scalar
+        5 * [[2,1],[4,2],[6,3]] = [[10,5],[20,10],[30,15]]
+        Multiplying 2 Martices
+        The number of columns in the first matrix should be equal to the number of rows in the second matrix
+        The resultant matrix will have the same number of rows as the first matrix and same number of columns as the second matrix
+        [[2,3],[8,6]] * [[10,5],[20,4]] = [[2*10+3*20,2*5+3*4],[8*10+6*20,8*6+5*4]] = [[80,22],[200,68]]
+    
+
+5.2.1 Statistics
+is the science concerned with developing and studying methods for collection analysing interpreting and presenting data
+    1. Range
+    2. Mean
+    3. Standard Devistion
+
+5.2.2.Basics of Statistics
+    Type of data :
+        Categorical :
+            Nominal : eg. Male , Female (there is no order)
+            is a classification of categorical variables that do not provide any quantitative value
+            Ordianel : eg. very bad, bad, good, very good (there is order)
+            are the type of data in which the values follow a natural order
+        Numerical :
+            Discrete : 
+            are the type of data that can only take certain values
+            Continuous : 
+            can have almost any numeric value unlike discrete data they can have decimal values
+5.2.3.Types of Statistics
+    Types of Statistics :
+        Descriptive Statistics : 
+        are used to describe the basic features of the data in a study they provide simple summaries about the sample and the measures
+            Describe the data
+            Using in Data Analysis
+            eg. What is the total investment made by the company
+            Use numerical measure
+            2 Important measures of descriptive statistics
+                1. Measure of Central Tendencies (Mean, Median, Mode)
+                2. Measure of Variability (Range, Standard Deviation, Variance)
+        Inferential Statistics : 
+        takes data from a sample and makes inferences and predictions about the larger population from which the sample was drawn
+            Get inferences about the data
+            Using in Data Science
+            eg. suggest the management of the company of various strategies
+            Find the inferences from data
+            eg. Correlation
+5.2.4.Types of Statistical Studies
+    Types of Statistical Studies
+        Sample Study :
+        is a study which is carried out an a sample which represents the total population
+        Observational Study
+        is study where we simply collect and analyze data we won't inject any changes we just observe the correlation in the data
+        Experimental Study
+        is study in which conditions are controlled and manipulated by the experimenter
+5.2.5.Population & Sample
+    Population & Sample
+    a sample study is a study which is carried out an a sample which represents the total population
+        Sampling Techniques
+            (Probability Sampling Techniques)
+                Simple Random Sampling
+                    the sample is randomly picked from a larger population hence all the individual datapoint has an equal probability to be selected as sample data
+                    eg. employee survey in a company
+                    Pros: 
+                    No sample Bis
+                    Balanced Sample
+                    Simple Methode of Sampling
+                    Requires less domain knowledge
+                    Cons:
+                    Population size should be high
+                    Cannot represend the population well sometimes
+                Systematic Sampling
+                    the sample is picked from the population at regular intervals, this type of sampling is carried out if the poplation is homogeneous and the data points are uniformly distributed
+                    eg. selecting every 10th member from a population of 10000
+                    Pros:
+                    Quick & easy
+                    Less Bias
+                    Even distribution of data
+                    Cons:
+                    Data manipulation risk
+                    Requires randomness in data
+                    Population should not have patterns
+                Stratified Random Sampling
+                    the population is subdivided into smaller groups called Strata, Samples are obtained randomly from all these strata
+                    eg. Smarthphone sales in all the states
+                    Props:
+                    Finds important characteristics in the population
+                    High precision can be obtained in the differences in the strata in high
+                    Cons:
+                    Cannot be performed on populations that cannot be classified into groups
+                    Overlapping data points
+                Cluster Sampling
+                    is carried out on population that has inherent groups , this population is subdivided into clusters and then random are taken as sample
+                    eg. Smartphone sales in randomly selected states
+                    Pros:
+                    Requires only fewer resources
+                    Reduced Variability
+                    Advantages of both Random sampling and Stratified sampling
+                    Cons:
+                    Cannot be performed on populations without natural groups
+                    Overlapping data points
+                    Can't provide a general insight for the entire population
+            (Non-Probability Sampling Techniques)
+                ...
+5.2.6.Central Tendencies
+    Central Tendency
+    a measure of central tendency is a value that represents the center point or typical value of a dataset, it is a value that summarizes the data
+        Mean (avrage) : is the sum of values divided by the number of values
+            eg. [160,172,165,168,174], mean = (160+172+165+168+174)/5 = 167.8
+        Median : is the middle value in the list of numbers, To find the median , the nubers have to be listed in numerical order from smallest to largest
+            eg. [160,172,165,168,174], median = [160,165,168,172,174] = 168
+            eg. [160,172,165,168,174,176], median = [160,165,168,172,174,176] = (168+172)/2 = 170
+        Mode : is the value that occurs most often if no number in the list is repeated the there is no mode for the list
+            eg. [160,172,165,168,174], mode = there is no mode for the list
+            eg. [160,172,160,168,174], mode = 160
+        Central Tendencies in Data Pre-Processing : are very useful in handling the missing values in a dataset
+            mean : missing values in a dataset can be replaced with mean value if the data is uniformly distributed
+            median : missing values in a dataset can be replaced with median value if the data is skewed
+            mode : missing values in a dataset can be replaced with mode value if the data is skewed, missing categorical values can also be replaced with mode value
+5.2.7.Range Sample Variance & Standard Deviation
+    Measure of Variability
+        Range : is the diffrence between the largest and smallest values it can give a rough idea about the distribution of our dataset
+            eg. [-5,0,5,10,15], mean = 5, range = 15 - (-5) = 20
+            eg. [3,4,5,6,7], mean = 5, range = 7 - 3 = 4
+        Variance : is a measure of how far each number in the set is from the mean and therefore from every other number is the dataset
+            eg. [-5,0,5,10,15], mean = 5, variance = exp((-5-5),2)+exp((0-5),2)+exp((5-5),2)+exp((10-5),2)+exp((15-5),2) / 5 = 50
+            eg. [3,4,5,6,7], mean = 5, variance = exp((3-5),2)+exp((4-5),2)+exp((5-5),2)+exp((6-5),2)+exp((7-5),2) / 5 = 2
+        Standard Deviation : is the sqaure root of variance. it looks at how spread out a group of numbers is from the mean
+            eg. [-5,0,5,10,15], mean = 5, SD = sqrt(variance) = sqrt(50) = 7.1
+            eg. [3,4,5,6,7], mean = 5, SD = sqrt(variance) = sqrt(2) = 1.4    
+5.2.8.Percentiles & Dispersion
+    Percentiles and Quantiles
+        Percentiles : is a value on scale of 100 that indicates the percent of a distribution is equal to or below it
+        eg. Dataset with height of 15 people, range [160,180], median = 170 is 50th Percentile, 
+        Quantiles : is a measure that tells how many values in a dataset are above or below a certain limit it divides the members of the dataset into equally-sized subgroups
+        eg. Dataset with height of 15 people, range [160,180], median = 170 is 0.5 or 50% Quantile, 
+5.2.9.Correlation & Causation
+    Correlation and Causation
+        Correlation : is a measure that determines the extent to which two variables are related to each other in a dataset, But it doesn't mean that one event is the cause of the other event
+            Positive Correlation : if one value increase the other value increase
+            eg. house price and number of rooms
+            Negative Correlation : if one value increase the other value decrease
+            eg. house price and crime rate
+        Causation : means that one event causes another event to occur thus there is a cause and effect relationship between two variables in a dataset
+            eg. Ice cream sales and temperature
+5.2.10.Hypothesis Testing
+    Hypothesis : is an assumption that is made based on the observation of an experiment
+        Null Hypothesis : H0 is the commonly accepted fact
+        eg. Ptolemy proposed that sun, stars and other planets revolve around the earth
+        Alternative Hypothesis : Ha is opposite to null hypothesis and it challenges the null hypothesis
+        eg. Aryabhata proposed that earth and other planets revolve around the sun
+    Hypothesis Testing : is an method carried out to tests the assumptions made in the experiment
+        eg. Pharmaceutical company, headace, time taken for recovery in minutes
+        drug1 for group1 : [12, 8, 13, 10, 7] = average = 10 minutes
+        drug2 for group2 : [15, 12, 18, 16, 14] = average = 15 minutes
+        Null Hypothesis H0 Drug1 is more quicker than drug2
+        Alternative Hypothesis Ha drug2 is more quicker than drug1
+        Possible Outcomes of Hypothesis Testing : 
+            Reject the Null Hypothesis
+            Faik to reject the Null Hypothesis
+5.3.1. Probability for Machine Learning
+    Probability : is branch of Mathematics that deals with calculating the likelihood of a given event to occur
+    eg. Roll a dice, Toss a coin, Bag containing different coloured balls
+5.3.2. Basics of Probability
+    eg. what is the probability of getting a number greater than 10 when we roll a die = 0
+    eg. what is the probability of getting a number less than 10 when we roll a die = 1
+    Probability Value :
+        impossible = 0, 0%
+        half chance = 0.5, 50%, 1/2
+        certain = 1, 100%
+    Probability of an event to occur = Number of ways an event can occur / Total number of outcomes
+        eg. Toss a coin = Possible Outcomes (H,T) = P(H) = 1/2 = P(T) = 1/2
+        eg. Roll a dice = Possible Outcomes (1,2,3,4,5,6) = P(5) = 1/6 = 0.16
+        eg. Roll a dice = Possible Outcomes (1,2,3,4,5,6) = P(even) = 3/6 = 0.5    
+5.3.3. Random Variables and its types | Discrete Random Variables | Continuous Random Variables
+    Random Variables : is a numerical description of the outcomes of random events
+        eg. Toss a coin = Random events (Head, Tail) = Possible Values (0, 1) = Random Values X, X = 0 if Head and X = 1 if Tail,
+        eg. Y = Weight of random person in a class, P(Weight of a random person in a class is less than 60 kg), P(Y < 60)
+    Applications : 
+        Turnover of a company is a given time period
+        Price change of an asset over a given time period
+    
+    Types of Random Variables
+        1. Discrete Random Variables : takes only discrete or distinct values
+            eg. coin toss, colour of the ball
+        2. Continuous Random Variables : take any value in a given range
+            eg. weight of a random person in a class
+5.3.4. Probability Distribution for Random Variable
+    Probability Distribution : the probability distribution for a random variable describes how the probabilities are distributed over the values of the random variable
+    eg. Tossing 3 coins : X = Sum of number of Heads when 3 coins are tossed / (HHH, HHT, HTH, THH, TTH, THT, HTT, TTT) / (3, 2, 2, 2, 1, 1, 1, 0) / P(X) = (P(3) = 1/8, P(2) = 3/8, P(1) = 3/8, P(0) = 1/8)
+5.3.5. Normal Distribution or Gaussian Distribution | Skewness
+    Normal Distribution : is an arrangement of a data set in which most of the data points lie in the middle of the range and the rest taper of symmetrically toward either extreme
+    Normal Distribution or Gaussian Distribution
+    Skewness : a data is considered skewed when the distribution curve appear distored or skewed either to the left or to the right in a statistical distribution
+    Negatively skewed : Mean, Median, Mode
+    Normal or no skew : Mean=Median=Mode
+    Positively skewed : Mode, Median, Mean
+5.3.6. Poisson Distribution
+    Poisson Distribution is a probability distribution that measures how many times an event is likely to occur within a specified period of time
+    Poisson Distribution is used to understand independent events that occur at a contant rate within a given interval of time
+    eg. Number of accidents occurring in a city from 6pm to 10pm
+    eg. Number of Patients arriving in an Emergency Room between 10pm to 12pm
+    eg. How may viens does your blog gets in a day
+    x -> number of times the event occurs
+    P(x) -> probability
+    L -> Mean number of event
+    x! -> Factorial of x
+    e -> Euler's Number (2.71828)
+    P(x) = exp(e,-L) * exp(L,x) / x!
+Maximum Likelihood
+Bayes Theorem
+Information Theory
+Cross Entropy
+Information Gain

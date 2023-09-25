@@ -22,13 +22,19 @@ is about predicting a class or discrete values, male/female, appel/mango, true/f
 Regression is a type of Supervised Learning
 is about predicting a quantity or continuous values, age, salary, price ...
 
+Logistic Regression is a type of Classification
+Support Vector Machine Classifier is a type of Classification
 Decision Tree Classification is a type of Classification
-Random Forest Classification is a type of Classification
 K-nearest Neighbor is a type of Classification
+Random Forest Classification is a type of Classification
+Naive Bayes Classifier is a type of Classification
 
-Logistic Regression is type of Regression
+Linear Regression is type of Regression
+Lasso Regression is type of Regression
 Polynomial Regression is type of Regression
-Support Vector Machines is type of Regression
+Support Vector Machines Regressor is type of Regression
+Random Forest Regressor is type of Regression
+Bayesin Linear Regressor is type of Regression
 
 1.4. Unsupervised Learning | Clustering and Association Algorithms in Machine Learning
 Clustering is a type of Unsupervised Learning
@@ -37,11 +43,12 @@ Association is a type of Unsupervised Learning
 is an unsupervised task that used to find important relationship between data points
     customer1 bay milk, bread, jus, customer2 bay mlik, bread, soda, customer3 bay milk, ? => bread 
 
-K-Means Clustering
-Hierarchical Clustering
-Pricipal Component Analysis (PCA)
-Apriori
-Eclat
+K-Means Clustering is type of Clustering
+Hierarchical Clustering is type of Clustering
+Pricipal Component Analysis (PCA) is type of Clustering
+
+Apriori is type of Association
+Eclat is type of Association
 
 
 1.5. What is Deep Learning | Deep Learning Tutorial | Deep Learning Simplified
@@ -235,7 +242,7 @@ is the science concerned with developing and studying methods for collection ana
 5.2.6.Central Tendencies
     Central Tendency
     a measure of central tendency is a value that represents the center point or typical value of a dataset, it is a value that summarizes the data
-        Mean (avrage) : is the sum of values divided by the number of values
+        Mean (average) : is the sum of values divided by the number of values
             eg. [160,172,165,168,174], mean = (160+172+165+168+174)/5 = 167.8
         Median : is the middle value in the list of numbers, To find the median , the nubers have to be listed in numerical order from smallest to largest
             eg. [160,172,165,168,174], median = [160,165,168,172,174] = 168
@@ -249,7 +256,7 @@ is the science concerned with developing and studying methods for collection ana
             mode : missing values in a dataset can be replaced with mode value if the data is skewed, missing categorical values can also be replaced with mode value
 5.2.7.Range Sample Variance & Standard Deviation
     Measure of Variability
-        Range : is the diffrence between the largest and smallest values it can give a rough idea about the distribution of our dataset
+        Range : is the difference between the largest and smallest values it can give a rough idea about the distribution of our dataset
             eg. [-5,0,5,10,15], mean = 5, range = 15 - (-5) = 20
             eg. [3,4,5,6,7], mean = 5, range = 7 - 3 = 4
         Variance : is a measure of how far each number in the set is from the mean and therefore from every other number is the dataset
@@ -342,3 +349,148 @@ Bayes Theorem
 Information Theory
 Cross Entropy
 Information Gain
+
+6. Machine Learning Models
+6.1. What is a Machine Learning Model?
+    A machine learning model is a function that tries to find the relationship between the features and the target variable
+    It tries to find the pattern in the data understand the data and tains on the data. based on this learning, machine learning model makes predictions and recognize patterns
+
+    Inference : the above line equation is a function that relates X and Y, for a given value of X we can find the corresponding value of Y
+    1.Simple linear model : Equation of a Straight line : Y = mX + c
+    X --> X value
+    Y --> Y value
+    m --> Slope
+    c --> Intercept
+    p1(x1, y1), p2(x2,y2); Slope, m = y2 - y1 / x2 - x1; Intercept, c = y2 - (m * x2)
+    p1(2, 7), p2(3,9); Slope, m = 9 - 7 / 3 - 2 = 2; Intercept, c = 9 - (2 * 3) = 9 - 6 = 3
+    2.Polynomial model : Equation : y = b0 + b1 * x1 + b2 * exp(x1, 2)
+    3.Logistic Regression
+    4.Support Vector Machine
+    5.K-Means Clustering
+    ...
+6.2. Supervised Learning Models
+6.3. Unsupervised Learning Models
+6.4. How to choose the right Machine Learning Model
+    Model Selection : in machine learning is the proces of choosing the best suited ;odel for a particular problem, Selecting a model depends on various factors such as the dataset, task, nature of the model etc.
+    Models can be selected based on : 
+        Type of Data available : 
+            Images & Videos - CNN (convolutional neural network) DL Model (Deep Learning Model)
+            Text data & Speech data - RNN (recurrent neural network) DL Model (Deep Learning Model)
+            Numerical data - SVM, Logistic Regression, Decision trees, etc.
+        Based on the task we need to carry out :
+            Classification tasks - SVM, Logistic Regression, Decision trees, etc.
+                you need to classify something so the result (is or not)
+                    Logistic Regression : when you have binary classification (two classes)
+                    Support Vector Machines : when the dataset is very small and the are no outliers in th data
+                        when there are a lot of outplays in the data cannot work well also when the data is to large because the processing time
+            Regression tasks - Linear Regression, Random Forest, Polynomial Regression, etc.
+                you try to find some value (price or temperature)
+            Clustering tasks - K-means Clustering, Hierarchical Clustering
+                you try to group the dataset based on the similarity
+    Cross Validation :
+        divide the data to multi part
+        make multi iteration and use for each iteration a part as test data
+        calculate the accuracy
+        Dataset => data1,data2,data3
+        iteration1 => data1,data2,data3 as test , accuracy is 88% for model1, accuracy  is 80% for model2
+        iteration2 => data1,data2 as test,data3 , accuracy is 84% for model1, accuracy  is 81% for model2
+        iteration3 => data1 as test,data2,data3 , accuracy is 80% for model1, accuracy  is 82% for model2
+        accuracy score for model1 = 84%, accuracy score for model2 = 81%
+        model1 is more performed
+6.5. Overfitting in Machine Learning | Causes for Overfitting and its Prevention
+    Overfitting : refers to a model that models the training data too well, Overfitting happens when a model learns the detail and noise in the training dataset to the extent that it negatively impacts the performance of the model
+    Over Fit vs Good Fit
+    Causes for Overfitting :
+        Less Data
+        Increased Complexity of the model
+        More number of layers in neural network
+    Preventing Overfitting by :
+        Using more data
+        Reduce he number of layers in the neural network
+        Early Stopping
+        Bias - Variance Tradeoff
+        Use Dropouts
+6.6. Underfitting in Machine Learning | Causes for Underfitting and its Prevention
+    Underfitting : happends when the model does not learn enough from the data, Underfitting occurs when machine learning model cannot capture the underlying trend of the data
+    Optimal vs Underfit
+    Under Fit vs Good Fit
+    Causes for Underfitting
+        Choosing a wrong model
+        Less complexity of the model
+        Less variance but high bias
+    Prevent Underfitting by :
+        Choosing the correct model appropriate for the problem
+        Increasing the complexity of the model
+        More number of parameters to the model
+        Bias - Variance Tradeoff
+6.7. Bias Variance Tradeoff
+    Bias : is the difference between the average prediction of our model and the correct value which we are trying to predict
+    Variance : is the amount that the estimate of the target function of the target function will change if different training data was used
+    Problem statement : identify an appropriate model to predict the height of a person when their weight is given
+    Plot on training data : Underfitting / Overfitting
+        when we use Underfitting we get very high bias but very low variance
+        when we use Overfitting we get very less bias but very high variance
+    Techniaues to have better bias - variance tradeoff :
+        Good Model Selection
+        Regularization
+        Dimensionality Reduction
+        Ensembke methods
+6.8. Loss Function in Machine Learning
+    Loss function : measures how far an estimated value is from its true value, It is helpfull to determine which model performs better and which parameters are better
+    Loss = 1/n * sum(exp(Yi-^Yi, 2)) = Low Loss value = High Accuracy 
+    Types of loss function : 
+        Cross Entropy Loss
+        Squared Error Loss
+        KL Divergence
+6.9. Model Evaluation in Machine Learning | Accuracy score | Mean Squared Error
+    Work Flow of a ML Project
+        Data -> Data Pre Processing -> Data Analysis -> Train Test split -> XGBoost Regressor -> Evaluation
+    Evaluation metric for Supervised Learning
+        Evaluation metric for Classification : Accuracy score
+        Evaluation metric for Regression : Mean Absolute Error
+    Accuracy score
+        In Classification Accuracy Score is the ration of number of correct predictions to the total number of input data points
+        Accuracy Score = Number of correct predictions / Total number of input data points * 100 %
+    Mean Squared Error
+        Mean Squared Error measures the avrege of the squares of the errors that is, the average squared difference between the estimated values and the actual value
+        MSE = 1/n * sum(exp(Yi-^Yi, 2))
+6.10. Model Parameters and Hyperparameters | Weights & Bias | Learning Rate & Epochs
+    Parameters
+        Model Parameters : 
+            These are the parameters of the model that can be determined by training with training data
+            These can be considered as internal parameters
+            e.g. , Weights / Bias / Y = w*X + b / Y = w1*X1 + w2*X2 + w3*X3 + b
+                X - feature or input variable
+                Y - target or output variable
+                w - weight
+                b - bias
+                e.g. , Applicant's Details, Input Data or feature or X : Name, Degree, College, C, C++, Python, Height, Weight, No. of Backlogs; Output Data or target or Y : select the applicant to hire to job
+                - Weights :  Weight decides how much influence the input will have on the output
+                we select the column important to select an applicant (Degree, College, C, C++, Python, No. of Backlogs)
+                we assign some particular numerical value to columns  zero for not important column (Name, Height, Weight)
+                we make diffrent value for each column defining the weighted of each column
+                we take into considiration the positive and negative impact, negative value for column with negative impact and positive value for positive impact
+                Name 0, Degree 2, College 3, C 5, C++ 6, Python 7, Height 0, Weight 0, No. of Backlogs -2
+                - Bias : Bias is the offset value given to the model Bias is used to shift the model in a particular direction, It is similar to a Y-intercept. 'b' is equal to 'Y' when all the feature values are zero
+        Hyperparameters :
+            These are the parameters whose values control the learning process
+            These are ajustable parameters used to obtain an optimal model
+            These are External parameters
+            e.g. , Learning Rate / Number of Epochs
+                - Learning Rate : The Learning Rate is a tuning parameter in an optimization algorithm that determines the step size at each iteration while moving toward a minimum of a loss function
+                - Number of Epochs : Number of Epochs represents the number of times the model iterates over the entire dataset
+6.11. Gradient Descent in Machine Learning
+    Model Optimozation
+        Optimization refers to determining best parameters for a model such that the loss function of the model decreases, as a result of wich the model can predict more accurately
+    Gradient Descent
+        Y is Loss function (J) and X is Weight (W)
+        Global Minimum
+            is the value with the minimum loss function the weight of this value is the better one
+            start with random initial value
+        w = w - L * dw
+        b = b - L * db
+        w -> weight
+        b -> bais
+        L -> Learning Rate
+        dw --> Partial Derivative of loss function with respect to w
+        db --> Partial Derivative of loss function with respect to b

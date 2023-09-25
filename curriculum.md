@@ -57,3 +57,15 @@ Module 5: Mathematics for Machine Learning
 5.3.4. Probability Distribution for Random Variable | Machine Learning Course
 5.3.5. Normal Distribution or Gaussian Distribution | Skewness | Probability for Machine Learning
 5.3.6. Poisson Distribution | Probability for Machine Learning
+Module 6: Machine Learning Models
+6.1. What is a Machine Learning Model?
+6.2. Supervised Learning Models | Supervised Learning
+6.3. Unsupervised Learning Models | Unsupervised Learning
+6.4. How to choose the right Machine Learning Model | Model Selection | Cross Validation
+6.5. Overfitting in Machine Learning | Causes for Overfitting and its Prevention
+6.6. Underfitting in Machine Learning | Causes for Underfitting and its Prevention
+6.7. Bias Variance Tradeoff | Machine Learning
+6.8. Loss Function in Machine Learning
+6.9. Model Evaluation in Machine Learning | Accuracy score | Mean Squared Error
+6.10. Model Parameters and Hyperparameters | Weights & Bias | Learning Rate & Epochs
+6.11. Gradient Descent in Machine Learning
